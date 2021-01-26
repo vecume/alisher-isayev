@@ -1,0 +1,58 @@
+#about {
+  .info {
+    margin-bottom: 150px;
+    p {
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  .course-plan {
+    h5 {
+      color: $mc;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+  }
+
+  .reserved-lessons {
+    h5 {
+      color: $mc;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+  }
+
+  .reserved-lessons-list {
+    margin-bottom: 100px;
+    li {
+      padding: 30px 0;
+      border-bottom: 1px solid $text-gray;
+      border-top: 1px solid $text-gray;
+      margin-bottom: -1px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 15px;
+        transform: rotate(-45deg);
+        display: block;
+        color: $mc;
+        font-size: 16px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .sticky-bar {
+    .waves {
+      left: -15%;
+      right: unset;
+      transform: scale(1.5);
+    }
+  }
+}

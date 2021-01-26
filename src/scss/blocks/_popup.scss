@@ -1,0 +1,81 @@
+.popup {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: 0.3s ease;
+  &.active {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.popup-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba($color: #e5e5e5, $alpha: 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+.popup-content {
+  z-index: 6;
+  background-color: $card-bg;
+  padding: 20px;
+  border-radius: 5px;
+  .js-close-modal {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.pop-up-register-form {
+  min-width: 300px;
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .input-group {
+    label {
+      font-size: 14px;
+      color: $mc;
+      margin-bottom: 5px;
+    }
+    input {
+      font-size: 20px;
+    }
+    textarea {
+      height: 100px;
+    }
+  }
+  .btn-circle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.dark-mode {
+  .popup-mask {
+    background-color: rgba($color: #33353e, $alpha: 0.5);
+  }
+}

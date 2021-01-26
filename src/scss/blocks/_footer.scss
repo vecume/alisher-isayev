@@ -1,0 +1,68 @@
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  .socials-wrapper {
+    h6 {
+      font-size: 20px;
+      color: $text-sc;
+      font-weight: normal;
+      margin-bottom: 35px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 100px;
+      a {
+        font-size: 40px;
+        color: $text-mc;
+        transition: 0.3s ease;
+        svg {
+          margin-left: 10px;
+          fill: $text-mc;
+          transition: 0.3s ease;
+        }
+        &:hover,
+        &:focus {
+          color: $mc;
+          svg {
+            fill: $mc;
+          }
+        }
+      }
+    }
+  }
+  .to-top {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 1px solid $text-mc;
+    transition: 0.3s ease;
+    &:hover,
+    &:focus {
+      background-color: $mc;
+      border-color: $mc;
+      svg {
+        fill: white;
+      }
+    }
+    svg {
+      fill: $text-mc;
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: $card-bg;
+  padding: 25px 0;
+  .basic-flex {
+    justify-content: space-between;
+    a,
+    p {
+      color: $text-mc;
+      font-size: 16px;
+    }
+  }
+}

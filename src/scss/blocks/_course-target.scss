@@ -1,0 +1,29 @@
+#course-target {
+  margin-bottom: 200px;
+}
+
+.course-target-list {
+  margin-bottom: 75px;
+  li {
+    display: block;
+    padding: 30px 0;
+
+    span {
+      font-size: 120px;
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $mc;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    h6 {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+    p {
+      color: $text-sc;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

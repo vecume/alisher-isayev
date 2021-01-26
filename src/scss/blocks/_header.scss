@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid $mc;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  .logo {
+    color: $text-mc;
+    font-size: 20px;
+    display: flex;
+    .main-color {
+      margin-left: 5px;
+    }
+  }
+}
+
+.header__details {
+  display: flex;
+  align-items: center;
+  .number-wrapper {
+    margin-right: 30px;
+    .main-color {
+      font-size: 16px;
+      text-align: right;
+      margin-bottom: 5px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      color: $text-mc;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.additional-questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    font-size: 40px;
+    color: $text-sc;
+    max-width: 600px;
+  }
+}

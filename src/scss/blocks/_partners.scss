@@ -1,0 +1,23 @@
+.partners-wrapper {
+  display: flex;
+  align-items: center;
+  .img-wrapper {
+    margin-right: 200px;
+  }
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 70px;
+  a {
+    font-size: 40px;
+    color: $text-mc;
+    transition: 0.3s ease;
+    border-bottom: 1px solid transparent;
+    &:hover,
+    &:focus {
+      border-color: $text-mc;
+    }
+  }
+}

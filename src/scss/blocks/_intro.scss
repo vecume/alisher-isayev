@@ -1,0 +1,132 @@
+#intro {
+  h1 {
+    font-size: 120px;
+    margin: 250px 0;
+    color: $mc;
+    &:after {
+      width: 750px;
+      height: 300px;
+      background-size: contain;
+      opacity: 0.7;
+      left: -75px;
+      top: 30%;
+    }
+  }
+  .secondary-title {
+    h4 {
+      font-size: 40px;
+      color: $text-mc;
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .info {
+    margin-bottom: 220px;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .person-name {
+    margin-bottom: 50px;
+    h3 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .awards-list {
+    margin-bottom: 80px;
+  }
+  .founded-businesses {
+    h5 {
+      font-size: 26px;
+      color: $mc;
+      margin-bottom: 30px;
+    }
+    .inner-wrapper {
+      display: flex;
+    }
+    a {
+      width: 185px;
+      height: 185px;
+      border-radius: 50%;
+      border: 2px solid $text-gray;
+      background-color: #fff;
+      transition: 0.3s ease;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+      &:hover,
+      &:focus {
+        border-width: 2px;
+        border-color: rgb(0, 173, 136);
+        box-shadow: 0px 0px 30px 0px rgba(0, 173, 136, 0.44);
+      }
+    }
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $mc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $mc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
