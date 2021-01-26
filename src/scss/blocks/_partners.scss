@@ -21,3 +21,35 @@
     }
   }
 }
+
+@media (max-width: $desktop-breakpoint) {
+  .partners-wrapper {
+    position: relative;
+    & > .img-wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .partners-list {
+      margin: 0 auto;
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .partners-list {
+    a {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .partners-list {
+    a {
+      font-size: 20px;
+    }
+  }
+}

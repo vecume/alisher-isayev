@@ -1,5 +1,23 @@
 .container {
-  width: 1230px;
+  width: $desktop-breakpoint;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .container {
+    width: $tablet-breakpoint;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .container {
+    width: $mobile-breakpoint;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .container {
+    width: 98%;
+  }
 }

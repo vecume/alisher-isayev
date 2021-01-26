@@ -1,10 +1,35 @@
-const elDarkModeToggler = document.querySelector("#js-dark-mode-toggler");
+const elsDarkModeToggler = document.querySelectorAll(".js-dark-mode-toggler");
 const elsAccordionTogglers = document.querySelectorAll(".js-accordion-toggler");
-const elRegisterBtn = document.querySelector(".js-register-btn");
+const elsRegisterBtn = document.querySelectorAll(".js-register-btn");
 const elRegisterModal = document.querySelector(".register-popup");
+const elOpenMenuBtn = document.querySelector(".js-open-menu");
+const elCloseMenuBtn = document.querySelector(".js-close-menu");
+const elMenu = document.querySelector(".mobile-header-dropdown");
 
-elRegisterBtn.addEventListener("click", () => {
-  elRegisterModal.classList.add("active");
+elOpenMenuBtn.addEventListener("click", () => {
+  elMenu.classList.add("active");
+  document.body.classList.add("overflow-hidden");
+});
+
+elCloseMenuBtn.addEventListener("click", () => {
+  elMenu.classList.remove("active");
+  document.body.classList.remove("overflow-hidden");
+});
+
+elsDarkModeToggler.forEach((el) => {
+  el.addEventListener("change", (evt) => {
+    if (el.checked) {
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+    }
+  });
+});
+
+elsRegisterBtn.forEach((el) => {
+  el.addEventListener("click", () => {
+    elRegisterModal.classList.add("active");
+  });
 });
 
 elRegisterModal.addEventListener("click", (evt) => {
@@ -13,14 +38,6 @@ elRegisterModal.addEventListener("click", (evt) => {
     evt.target.matches(".js-close-modal")
   ) {
     elRegisterModal.classList.remove("active");
-  }
-});
-
-elDarkModeToggler.addEventListener("change", (evt) => {
-  if (elDarkModeToggler.checked) {
-    document.documentElement.classList.add("dark-mode");
-  } else {
-    document.documentElement.classList.remove("dark-mode");
   }
 });
 

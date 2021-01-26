@@ -130,3 +130,97 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: $desktop-breakpoint) {
+  #intro {
+    .founded-businesses {
+      a {
+        width: 150px;
+        height: 150px;
+        img {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  #intro {
+    h1 {
+      font-size: 80px;
+      margin: 100px 0;
+      color: $mc;
+      text-align: center;
+      &:after {
+        width: 100%;
+        left: 50%;
+        top: 50%;
+      }
+    }
+    .founded-businesses {
+      a {
+        width: 100px;
+        height: 100px;
+        img {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  #intro {
+    .info {
+      margin-bottom: 100px;
+    }
+    .person-name {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  #intro {
+    h1 {
+      font-size: 48px;
+    }
+    .secondary-title {
+      h4 {
+        font-size: 34px;
+        text-align: center;
+      }
+    }
+    .sticky-bar {
+      margin-bottom: 40px;
+    }
+    .info {
+      margin-bottom: 60px;
+      p {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
+    .person-name {
+      h3 {
+        font-size: 42px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .awards-list {
+      margin-bottom: 50px;
+    }
+    .founded-businesses {
+      text-align: center;
+      .inner-wrapper {
+        justify-content: space-between;
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

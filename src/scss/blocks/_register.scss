@@ -1,6 +1,3 @@
-#register {
-}
-
 .register-form {
   .input-group {
     margin-bottom: 25px;
@@ -28,6 +25,27 @@
     textarea {
       resize: none;
       height: 200px;
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  #register {
+    .section-content {
+      & > .img-wrapper {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  #register {
+    .section-content {
+      & > .img-wrapper {
+        width: 100%;
+        margin-bottom: 60px;
+      }
     }
   }
 }
