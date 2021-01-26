@@ -4,7 +4,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -286,6 +285,9 @@ img {
 }
 
 @media (max-width: $mobile-breakpoint) {
+  html {
+    overflow-x: hidden;
+  }
   .section-content {
     display: flex;
     justify-content: space-between;
