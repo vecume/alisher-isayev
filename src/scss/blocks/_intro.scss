@@ -175,16 +175,23 @@ input:checked + .slider:before {
 @media (max-width: $mobile-screen) {
   #intro {
     h1 {
-      font-size: 48px;
+      font-size: 25px;
+      &::after {
+        display: none;
+      }
     }
     .secondary-title {
       h4 {
-        font-size: 34px;
+        font-size: 20px;
         text-align: center;
+        margin-bottom: 25px;
       }
     }
     .sticky-bar {
       margin-bottom: 40px;
+      & > .img-wrapper {
+        height: 40vh;
+      }
     }
     .info {
       margin-bottom: 60px;
