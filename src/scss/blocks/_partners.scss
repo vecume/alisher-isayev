@@ -8,8 +8,9 @@
 
 .partners-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px 75px;
   li {
     display: flex;
     align-items: center;
@@ -38,14 +39,16 @@
       transform: translateX(-50%);
       z-index: -1;
     }
-    .partners-list {
-      margin: 0 auto;
-      justify-items: center;
-    }
+  }
+  .partners-list {
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 50px;
   }
 }
 
-@media (max-width: $mobile-screen) {
+@media (max-width: $mobile-breakpoint) {
   .partners-list {
     grid-template-columns: 1fr 1fr;
   }
