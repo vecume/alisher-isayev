@@ -43,7 +43,9 @@
   #register {
     .section-content {
       & > .img-wrapper {
-        width: 100%;
+        margin: 0 auto;
+        max-width: 80%;
+        width: unset;
         margin-bottom: 60px;
       }
     }
