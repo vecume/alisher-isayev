@@ -1,23 +1,29 @@
 .partners-wrapper {
   display: flex;
   align-items: center;
-  .img-wrapper {
+  & > .img-wrapper {
     margin-right: 200px;
   }
 }
 
 .partners-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   a {
     font-size: 40px;
     color: $text-mc;
     transition: 0.3s ease;
-    border-bottom: 1px solid transparent;
+    width: 120px;
+    transition: 0.3s ease;
     &:hover,
     &:focus {
-      border-color: $text-mc;
+      transform: scale(1.1);
     }
   }
 }
@@ -38,18 +44,8 @@
   }
 }
 
-@media (max-width: $mobile-breakpoint) {
-  .partners-list {
-    a {
-      font-size: 30px;
-    }
-  }
-}
-
 @media (max-width: $mobile-screen) {
   .partners-list {
-    a {
-      font-size: 20px;
-    }
+    grid-template-columns: 1fr 1fr;
   }
 }
